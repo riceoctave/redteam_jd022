@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "riceoctave-redteam_jd022"
+version = "0.1.0"
+description = "解析时间标记，排列红队与内容安全工程师·提示注入的跨轮传播的发生顺序，标出间隔异常与逆序事件"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "riceoctave" }]
+keywords = ["cli", "analysis", "observability", "evaluation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://riceoctave.github.io"
+Repository = "https://github.com/riceoctave/redteam_jd022"
+Issues = "https://github.com/riceoctave/redteam_jd022/issues"
+
+[project.scripts]
+redteam_jd022 = "redteam_jd022:main"
+
+[tool.setuptools]
+py-modules = ["redteam_jd022"]
